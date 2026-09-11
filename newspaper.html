@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+
+            font-family: 'Times New Roman', Times, serif;
+            background-color:bisque;
+           
+        }
+        .head h1{
+            text-align: center;
+            font-size: 60px;
+            margin:10px 0;
+        }
+       .head P{
+            text-align: center;
+            font-size: 14px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            margin-bottom: 20px;
+            padding: 10px 0 10px 0;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            margin:20px 20px 20px 20px;
+            font-style: italic;
+           
+        }
+    
+        .box1,.box2,.box3,.box4{
+            border-right: 2px solid black;  
+        }
+        
+        h2{
+            font-size: 30px;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .author{
+            /* display: inline-block; */
+            width: 500px;
+            text-align: center;
+            font-size: 14px;   
+            border-top: 1px solid black;
+             border-bottom: 1px solid black;
+             padding: 5px;
+             /* margin:30%;   */
+        }
+        .unlined{
+            border: 0;
+            font-size: 30px;;
+            
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="head">
+    <h1>NEWSPAPER LITLE</h1>
+    <p>STATE,COUNTRY-FRIDAY 27 MARCH 2026-10 PAGES</p>
+    </div>
+    <div class="container">
+        <div class="box1">
+            <h2>First Subheading</h2>
+            <span class="author">by Author Name</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae velit ipsa incidunt ea laboriosam aut voluptate neque dolor molestiae dolore, veniam quos explicabo dignissimos harum. Perferendis eligendi adipisci ex dignissimos?</p>
+        </div>
+        <div class="box2">
+            <h2>SUB TITLE</h2>
+            <span class="author unlined">Author Name</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod similique qui libero cupiditate beatae? Consequuntur aut saepe pariatur tempora officiis, deserunt quis culpa ea odio sequi quas sunt, hic facilis!</p>
+        </div>
+        <div class="box3">
+            <h2>INTERESTING TITLE</h2>
+            <span class="author">Author name</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel fuga velit inventore voluptate quam, incidunt possimus beatae eum suscipit voluptas ab maxime voluptatum laboriosam ipsam accusamus nulla eveniet. Soluta!</p>
+        </div>
+        <div class="box4">
+            <h2>Sub Heading</h2>
+            <span class="author">by Author name</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At placeat deleniti repudiandae amet exercitationem iusto fugiat, optio minus praesentium neque accusamus quia nesciunt perspiciatis non officia, cum perferendis beatae quod?</p>
+        </div>
+        <div class="box5">
+            <h2>SUB HEADING</h2>
+            <span class="author">by Author name</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores explicabo quae necessitatibus tenetur. Accusamus in quis dolor officiis unde quod odio, voluptate ipsam corrupti architecto dolorem aliquam porro a tempore!</p>
+        </div>
+    </div>
+</body>
+</html>
