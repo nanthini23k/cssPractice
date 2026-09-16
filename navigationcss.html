@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        .navigation{
+            background-color: orange;
+            color: #101112;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+       
+        .left{
+             display: flex;
+             gap: 20px;
+             align-items: center;
+             flex-wrap: wrap;
+         }
+         .center{
+            font-size: 30px;
+            font-weight: bold;
+         }
+         .right{
+            display:flex;
+            gap: 20px;
+            align-items: center;
+           flex-wrap: wrap;
+        }
+         .menu{
+            display:none;
+         }
+         /* Tablet */
+@media (max-width: 768px){
+
+    .left{
+        gap:15px;
+    }
+
+    .center{
+        font-size:22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+
+    .left{
+        display: none;   
+       
+    }
+
+    .menu{
+        display: block;   
+        cursor: pointer;
+        font-size: 20px;
+
+    }
+
+    .navigation{
+        position: relative;
+    }
+
+    .center{
+        font-size:20px;
+    }
+}
+         
+    </style>
+</head>
+<body>
+        <div class="navigation">
+            
+            <div class="left">
+                    <span><i class="fa-solid fa-house"></i>Home</span>
+                    <span><i class="fa-solid fa-circle-info"></i>About</span>
+                    <span><i class="fa-solid fa-rectangle-list"></i>Products</span>
+                    <span><i class="fa-solid fa-address-book"></i>contact</span>
+            </div>
+            <div class="center">Maghizh Organic</div>
+            <div class="right">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                <span class="menu"> <i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+
+
+
+
+</body>
+</html>

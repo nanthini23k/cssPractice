@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .header{
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px 20px;
+            background-color:bisque;
+        }
+        .logo{
+            width: 30%;
+            font-size: 40px;
+            /* flex-shrink: 0; */
+        }
+        .searchbar{
+            width:50%;
+            flex-grow: 1;
+            /* flex-shrink: 0; */
+        }
+        .searchbar input{
+            width:80%;
+            padding: 5px;
+            border-radius: 15px;
+
+        }
+        .action{
+            width:20%;
+            /* flex-shrink: 0; */
+        }
+        .list{
+            list-style-type: none;
+            display:flex;
+            flex-shrink: 0;
+            font-size: 20px;
+            justify-content: space-evenly;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Green Apple<i class="fa-solid fa-apple-whole" style="color: rgb(11, 159, 114);"></i></div>
+        <div class="searchbar">
+            <span class="icon"><i class="fa-solid fa-magnifying-glass" style="color: rgb(11, 159, 114);"></i></span>
+        <input type="text" placeholder="Search here...">
+        </div>
+        <div class="action">
+            <ul class="list">
+            <li><i class="fa-solid fa-bell" style="color: rgb(11, 159, 114);"></i>Notify Me</li>
+            <li><i class="fa-solid fa-user" style="color: rgb(11, 159, 114);"></i>User</li>
+            </ul>
+        </div>
+    </div>
+     
+</body>
+
+</html>

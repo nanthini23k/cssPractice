@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0;}
+        .container{
+         text-align: center;  
+        display:grid;
+        grid-template-columns:200px ;
+        grid-template-rows: 100px 200px 200px 100px;
+        grid-template-areas:
+         "Navigation Navigation Navigation"
+         "Sidebar Heading Heading"
+         "Sidebar Paragraph Image"
+         "Footer Footer Footer ";
+
+    }
+    .one{
+        background-color: aqua;
+        grid-area: Navigation;
+    }
+    .two{
+        background-color:burlywood;
+        grid-area: Sidebar;
+    }
+    .three{
+        background-color:chocolate;
+        grid-area: Heading;
+    }
+    .four{
+        background-color:darkcyan;
+        grid-area: Paragraph;
+    }
+    .five{
+        background-color:darkgreen;
+        grid-area: Image;
+    }
+    .six{
+        background-color:aqua;
+        grid-area: Footer;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="one">Navigation</div>
+        <div class="two">Sidebar</div>
+        <div class="three">Heading</div>
+        <div class="four">Paragraph</div>
+        <div class="five">Image</div>
+        <div class="six">Footer</div>
+        
+    </div>
+</body>
+</html>

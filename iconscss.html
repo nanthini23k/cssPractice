@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+        h1{
+            background-color: lightblue;
+            text-align: center;
+            border:2px solid black;
+        }
+        div{
+            background-color: lightblue;
+            font-size:30px;
+            width:220px;
+            border:2px solid black;
+        }
+        .mobile{ display:none;}
+        .tab{display:none;}
+        
+        @media (max-width:650px){
+            .desktop{display:none;}
+            .tab{display:block;}
+        }
+        @media (max-width:350px){
+            .tab{display:none;}
+            .mobile{display:block;}
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Icons</h1>
+    <div class="desktop">Desktop only:<i class="fa-solid fa-desktop"></i></div><br>
+    <div class="tab">Tablet only:<i class="fa-solid fa-tablet"></i></div><br>
+    <div class="mobile">Mobile only:<i class="fa-solid fa-mobile-screen"></i></div>
+</body>
+</html>

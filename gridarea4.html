@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0;}
+        .container{
+         text-align: center;  
+         border:3px solid black;
+        display:grid;
+        grid-template-columns:200px ;
+        grid-template-rows: 100px 200px 200px 100px;
+        grid-template-areas: 
+        "Sidebar Navigation Navigation"
+        "Sidebar Heading1 Heading2"
+        "Sidebar Image Image"
+        "Sidebar Footer Footer"
+        ;
+        background-color: aqua;
+        }
+        
+        .one{
+        background-color: aqua;
+        grid-area: Sidebar;
+        border:3px solid black;
+    }
+    .two{
+        background-color:burlywood;
+        grid-area:Navigation ;
+        border:3px solid black;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .three{
+        background-color:chocolate;
+        grid-area: Heading1;
+        border:3px solid black;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .four{
+        background-color:darkcyan;
+        grid-area: Heading2;
+        border:3px solid black;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .five{
+        background-color:darkgreen;
+        grid-area: Image;
+        border:3px solid black;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .six{
+        background-color:rgb(224, 158, 16);
+        grid-area: Footer;
+        border:3px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">Sidebar</div>
+        <div class="two">Navigation</div>
+        <div class="three">Heading1</div>
+        <div class="four">Heading2</div>
+        <div class="five">Image</div>
+        <div class="six">Footer</div>
+        
+    </div>
+</body>
+</html>

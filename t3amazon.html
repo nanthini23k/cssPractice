@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        /* container 1 */
+        .con1{
+            background-color: black;
+            color: white;
+             display:flex;
+             padding:0px 20px;
+
+        }
+        .logo{
+            width:20%;
+        }
+        .location{
+            width:10%;
+        }
+        .searchbar{
+    width:50%;
+    flex-grow: 1;
+    /* padding-top: 20px; */
+    display: flex;              
+    align-items: center;        
+}
+
+
+.searchbar input{
+    width:100%;
+    height: 36px;
+    padding: 0px 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;  
+}
+
+.searchbar .icon{
+    background-color:orange;
+    height:36px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;  /* right rounded only */
+    cursor: pointer;
+}
+        .actions{
+            width:20%;  
+            list-style-type: none; 
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* padding-top: 10px; */
+        }
+        .logo img{
+            height: 100%;
+            width:100%;
+        }
+        /* container2 */
+        .con2{
+            height:50px;
+            background-color:rgb(20,110,180);
+            color:white;
+            display:flex;
+        }
+        .left{
+            width:70%;
+            display:flex;
+            align-items: center;
+            justify-content:flex-start;
+            gap:15px;
+            list-style-type: none;
+        }
+        .right{
+            width:30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            /* padding-left: 250px;   */
+        }
+        /* container 3 */
+        .con3 img{
+            width:100%;
+            height: 300px;
+        }
+        /* container 4 */
+        .con4{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            /* gap:20px; */
+            background-color:rgb(242,242,242);
+        }
+        .con4 p{
+            color:blue;
+        }
+        .con4 img{
+            height:300px;
+            width:300px;
+        }
+        .card1, .card2, .card3, .card4{
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin:20px 10px;
+            text-align: center;
+        }
+        .shop:hover{
+             cursor:pointer;
+        }
+        /* container5 */
+        .con5{
+            height: 40px;
+            background-color:rgb(20,110,180);
+            color:white;
+            align-content: center;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        /* container6 */
+        .con6{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color:rgb(35,47,62);
+            color:white;
+        
+        }
+        .con6 ul{
+            list-style-type: none;
+            margin-left: 0 px;
+            padding:0 px;
+        }
+        .con6 h3{
+            padding-left: 40px;
+            margin:0 Px;
+        }
+    
+        /* @media (max-width:650px) {
+            .logo img{
+                
+                position: relative;
+            }
+        .main{
+            width:auto;
+            height:auto;
+        }
+        .location{
+            display:none;
+        }
+        .order{
+            display:none;
+        }
+        .right{
+            display:none;
+        }
+        .left{
+            width: auto;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .actions{
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .con4{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .con6{
+            grid-template-columns: repeat(2,1fr);
+        }
+        } */
+         @media (max-width:400px) {
+            .con1{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding:0px;
+    }
+    .order{
+        display:none;
+    }
+
+    .logo{
+        width:40%;
+        height: auto;
+        text-align:center;
+    }
+
+    .location{
+        display:none;   
+    }
+
+    .searchbar{
+        width:auto;
+    }
+
+    .actions{
+        width:auto;
+        display: flex;
+        gap: 15px;
+        justify-content:center;
+        align-items: flex-end;
+        padding:0 10px;
+    }
+    .actions span {
+        white-space: nowrap; 
+        font-size: 14px;     
+    }
+
+.con2{
+       
+        height:auto; 
+        padding:0 20px;   
+    }
+
+    .right{
+        display:none;  
+    }
+    .left{
+        text-align: center;
+        padding-left: 0px;
+    }
+
+
+        .con4{
+            grid-template-columns: 1fr;
+        }
+        
+        .con6 {
+        grid-template-columns: 1fr;
+        text-align: center; 
+    }
+
+    .con6 h3 {
+        padding-left: 0; 
+        margin-bottom: 10px;
+    }
+
+    .con6 ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+            }
+
+    .con6 li {
+        margin-bottom: 8px;
+    }
+    }
+           
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="con1">
+        <div class="logo">
+            <img src="./image/logo.jpeg">
+        </div>
+        <div class="location">
+            <p>Delivery<br><i class="fa-solid fa-location-dot"></i>Mayiladuthurai</p>
+        </div>
+        <div class="searchbar">
+    <input type="text" placeholder="Search Amazon...">
+    <span class="icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </span>
+</div>
+        <ul class="actions">
+            <span>Sign in</span>
+            <span class="order">Orders</span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+        </ul>
+    </div>
+    <div class="con2">
+        <ul class="left">
+            <li><i class="fa-solid fa-bars"></i></li>
+            <li>Today's Deals</li>
+            <li>Customer Service</li>
+            <li>Registry</li>
+            <li>Gift Cards</li>
+            <li>Sell</li>
+        </ul>
+        <p class="right">Shop deals in Electronics</p>
+    </div>
+    <div class="con3">
+        <img src="./image/banner.jpeg" alt="img not found">
+    </div>
+    <div class="con4">
+        <div class="card1">
+            <h3>Shop Laptops & Tablets</h3>
+            <img src="./image/table.jpeg">
+            <p class="shop">Shop now</p>
+        </div>
+        <div class="card2">
+            <h3>Shop Smartwatches</h3>
+            <img src="./image/watch.jpeg">
+            <p class="shop">Shop now</p>
+        </div>
+        <div class="card3">
+            <h3> Create with Strip lights</h3>
+            <img src="./image/music.jpeg">
+            <p class="shop">Shop now</p>
+        </div>
+        <div class="card4">
+            <h3>Home Refresh ideas</h3>
+            <img src="./image/watertap.jpeg">
+            <p class="shop">Shop now</p>
+        </div>
+    </div>
+    <div class="con5">
+        <p>Back to top</p>
+    </div>
+    <div class="con6">
+        <div class="f1">
+            <h3>Get To know Us</h3>
+            <ul>
+                <li>About us</li>
+                <li>Careers</li>
+                <li>Press Release</li>
+                <li>amazon Science</li>
+            </ul>
+        </div>
+        <div class="f2">
+            <h3>Connect with Us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+        <div class="f3">
+            <h3>Make Money with Us</h3>
+            <ul>
+                <li>Sell on Amazon</li>
+                <li>Sell under amazon Accelerator</li>
+                <li>Prodect and Build Your Brand</li>
+                <li>Amazon Global Selling</li>
+                <li>Become an Affiliate</li>
+                <li>Fullfillment by Amazon</li>
+                <li>Advertise Your Products</li>
+                <li>Amazon pay on Merchants</li>
+            </ul>
+        </div>
+        <div class="f4">
+            <h3>Let Us Help You</h3>
+            <ul>
+                <li>your Account</li>
+                <li>Return Center</li>
+                <li>100% Purchase Protection</li>
+                <li>Amazon App Download</li>
+                <li>Help</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

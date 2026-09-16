@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+    .container{
+        width:100vw;
+        height:80vh;
+        background-color: bisque;
+        /* margin: auto; */
+    }
+    .head h1{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 60px;
+        text-align: center;
+        padding: 10px;
+    }
+    .head p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        text-align: center;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 10px 0;
+    }
+    .tail{
+        margin: 10px;
+        font-style: italic;
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+    .tail h2{
+        text-align: center;
+    }
+    .box1 h2,.box4 h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        margin: 10px;
+        
+    }
+    .box3 h2,.box5 h2{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        font-weight: bold; 
+        margin: 10px;   
+    }
+    .box2 h2{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        margin: 10px;
+    }
+    .one, .two,.three, .four, .five{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        width:fit-content;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        margin:auto;
+        padding: 5px;
+    }
+    .two{
+        border:none;
+        font-size: 30px;
+    }
+    .one, .four, .five{
+        font-weight: bold;
+    }
+    .three{
+        font-size:25px;
+    }
+    .tail p{
+        padding: 10px;
+    }
+    .box1,.box2,.box3,.box4{        
+        height: fit-content;
+        border-right: 2px solid black;
+    }
+   
+    @media (max-width: 650px) {
+    .container{
+            width:auto;
+            height:auto;
+        }
+    .tail{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .head h1{
+        font-size: 50px;
+    }
+
+    .box1,.box2,.box3,.box4,.box5{
+        
+        border-bottom: 2px solid black;
+    }
+    .box5{
+        border-right: 2px solid black;
+        border-bottom: none;
+    }
+    .box2,.box4{
+        border-right: none;
+    }
+
+}
+ @media (max-width: 350px) {
+    .container{
+            width:auto;
+            height:auto;
+        }
+    .tail{
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .head h1{
+        font-size: 50px;
+    }
+
+    .box1,.box2,.box3,.box4{
+        border-bottom: 2px solid black;
+        border-right: none;
+        /* border-left: 2px solid black; */
+    }
+    .box5{
+        border-right: none;
+        border-bottom: none;
+    }
+}
+    
+    
+        
+
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="head">
+            <h1>NEWSPAPER TITLE</h1>
+            <p>STATE,COUNTRY-FRIDAY 27 MARCH 2026-10 PAGES</p>
+        </div>
+        <div class="tail">
+            <div class="box1">
+            <h2>First<br> Subheading</h2>
+            <p class="author one">by Author Name</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae velit ipsa incidunt ea laboriosam aut voluptate neque dolor molestiae dolore, veniam quos explicabo dignissimos harum. Perferendis eligendi adipisci ex dignissimos?</p>
+            </div>
+            <div class="box2">
+            <h2>SUB TITLE</h2>
+            <p class="author two">Author Name</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod similique qui libero cupiditate beatae? Consequuntur aut saepe pariatur tempora officiis, deserunt quis culpa ea odio sequi quas sunt, hic facilis!</p>
+            </div>
+            <div class="box3">
+            <h2>INTERESTING <br> TITLE</h2>
+            <p class="author three">Author Name</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius vel fuga velit inventore voluptate quam, incidunt possimus beatae eum suscipit voluptas ab maxime voluptatum laboriosam ipsam accusamus nulla eveniet. Soluta!</p></div>
+            <div class="box4">
+            <h2>Sub Heading</h2>
+            <p class="author four">by Author Name</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At placeat deleniti repudiandae amet exercitationem iusto fugiat, optio minus praesentium neque accusamus quia nesciunt perspiciatis non officia, cum perferendis beatae quod?</p></div>
+            <div class="box5">
+            <h2>SUB HEADING</h2>
+            <p class="author five">by AUTHOR NAME</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores explicabo quae necessitatibus tenetur. Accusamus in quis dolor officiis unde quod odio, voluptate ipsam corrupti architecto dolorem aliquam porro a tempore!</p>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

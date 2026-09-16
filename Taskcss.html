@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .paratUl>li{
+
+        color:blue;
+      }
+      .tick::before{
+        content: "\221A";
+        /* symbols: "\221A"; */
+      }
+
+    </style>
+</head>
+<body>
+    
+  <!-- Task 1: Element Selector -->
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>  
+
+  <!-- Task 2: ID Selector -->
+  <h1 id="title">This is title</h1>
+  <h1 id="another">This is another title</h1>
+
+  <!-- Task 3: Class Selector -->
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+
+  <!-- Task 4: Group Selector -->
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <p>Paragraph text</p>
+
+  <!-- Task 5: Descendant -->
+  <div>
+    <p>Inside div</p>
+  </div>
+  <p>Outside div</p>
+
+  <!-- Task 6: Child -->
+  <div>
+    <p>Direct child</p>
+    <section>
+      <p>Not direct child</p>
+    </section>
+  </div>
+
+  <!-- Task 7: Adjacent Sibling -->
+  <h1>Heading</h1>
+  <p> paragraph</p>
+  <p> Another paragraph</p>
+
+  <!-- Task 8: Attribute -->
+   <label for="name">Name</label>
+  <input type="text" id="name"><br><br>
+  <label for="pass">Password</label>
+  <input type="password" id="pass">
+
+  <!-- Task 9: Hover -->
+  <button>Submit</button>
+
+  <!-- Task 10: First Letter -->
+  <p>First letter styling example</p>
+
+  <!-- Task 11: Universal -->
+  <h3>Universal selector test</h3>
+
+  <!-- Task 12: Multiple Class -->
+  <div class="boxred">Box Red</div>
+  <div class="boxred">Box Red</div>
+  <div class="boxred">Box Red</div>
+  <div class="box">Normal Box</div>
+
+  <!-- Task 13: Element + Class -->
+  <p class="note">Note paragraph</p>
+  <p>Normal paragraph</p>
+
+  <!-- Task 14: Element + ID -->
+  <h2 id="heading">Heading with ID</h2>
+
+  <!-- Task 15: Deep Descendant -->
+  <section>
+    <div>
+      <span>Deep span</span>
+    </div>
+  </section>
+
+  <!-- Task 16: Child (ul > li) -->
+  <ul class="paratUl">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+      <ul>
+        <li>Nested Item</li>
+      </ul>
+    <li> Item 4</li>
+  </ul>
+
+  <!-- Task 17: General Sibling -->
+  <h2>Heading</h2>
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+
+  <!-- Task 18: Attribute Exists -->
+  <input required>
+  <input><br>
+
+  <!-- Task 19: Attribute Equals -->
+  <input type="password">
+  <input type="text">
+
+  <!-- Task 20: Starts With -->
+  <button class="btn-primary">Primary</button>
+  <button class="btn-secondary">Secondary</button>
+
+  <!-- Task 21: Ends With -->
+  <img src="image.png">
+  <img src="image.jpg">
+
+  <!-- Task 22: Contains -->
+  <div class="card-box">Card</div>
+  <div class="box">Normal</div>
+
+  <!-- Task 23: First Child -->
+  <ul>
+    <li>First</li>
+    <li>Second</li>
+  </ul>
+
+  <!-- Task 24: Last Child -->
+  <ul>
+    <li>First</li>
+    <li>Last</li>
+  </ul>
+
+  <!-- Task 25: nth-child(2) -->
+  <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ul>
+
+  <!-- Task 26 & 27: odd/even -->
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+
+  <!-- Task 28: Focus -->
+   <label for="nameid">Enter your name</label>
+  <input type="text" id="nameid">
+
+  <!-- Task 29: ::before -->
+  <h1 class="tick">Before example</h1>
+
+  <!-- Task 30: ::after -->
+  <p>After example</p>
+</body>
+</html>

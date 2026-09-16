@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        .main{
+            display:flex;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+        }
+        .container1{
+            width:20%;
+            height:100%;
+        }
+        .container1 h1::first-letter{
+            font-size: 50px;
+            color: red;
+        }
+        .sidelist{
+            display:flex;
+            flex-direction: column;
+            padding-right:20px;
+            gap:20px;
+        }
+        .list{
+            height:50px;
+            background-color: gray;
+            display:flex;
+            align-items: center;
+            padding-left: 15px;
+        }
+        .container2{
+            width:80%;
+            min-height:100%;
+            background-color:purple;
+            padding:20px;
+        
+        }
+        .header{
+            height: 200px;
+            background-color: white;
+            border-radius: 20px;
+            display:flex; 
+            justify-content: space-between; 
+            /* align-items: center;      */
+        }
+        .left{
+            width:40%;
+            padding: 20px;
+        }
+        .btn{
+            background-color: purple;
+            color: white;
+            border-radius: 25px;
+            padding:5px 40px;
+            margin-right: 10px;
+            gap:10px;
+        }
+        .center{
+            width:40%;
+            font-size: 20px;
+            color: green;
+            padding:40px;
+        }
+        .right{
+            width:20%;
+            padding: 50px 20px;
+        }
+        .right i{
+            font-size: 80px;
+            border: 2px solid black;
+            padding: 8px;
+            border-radius: 100%;
+        }
+        .threesplitup{
+            
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:20px;
+            margin-top: 10px;
+         }
+        .one,.two,.three{
+            height:100px;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .twosplitup{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:20px;
+            margin-top: 10px;
+
+        }
+        .threesplitup h2{
+            color:red;
+        }
+        
+        .four, .five{
+            height:250px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        footer{
+            font-style: italic;
+            text-align: center;
+            color:rgb(237, 230, 230);
+            margin-top: 20px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container1">
+        <h1>Green Apple</h1>
+        <div class="sidelist">
+        <div class="list">Dashboard</div>
+        <div class="list">Profile</div>
+        <div class="list">Projects</div>
+        <div class="list">Messages</div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="header">
+            <div class="left">
+            <h1>Flex Box Mega UI</h1>
+            <p>Pure Flex layout with modern Website Structure</p>
+            <button class="btn">Explore</button>
+            <button class="btn">Contact</button>
+        </div>
+        <div class="center">
+            <h1>Green Apple</h1>
+        </div>
+        <div class="right">
+            <i class="fa-solid fa-apple-whole" style="color: rgb(11, 159, 114);"></i>
+
+        </div>
+           
+        </div><br>
+        <div class="threesplitup">
+            <div class="one"><h2>12+</h2><P>Projects</P></div>
+            <div class="two"><h2>8+</h2><P>Skills</P></div>
+            <div class="three"><h2>5+</h2><P>Years</P></div>
+        </div><br>
+        <div class="twosplitup">
+            <div class="four"></div>
+            <div class="five"></div>
+        </div>
+        <footer>2026 Flex Split Mega Project</footer>
+    </div>
+      
+    </div>   
+       
+    
+</body>
+</html>

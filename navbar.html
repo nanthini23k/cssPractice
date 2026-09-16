@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+    background-color: rgb(20,110,180);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+/* Left side */
+.nav-left{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-left span{
+    cursor: pointer;
+}
+
+.nav-left span:hover{
+    text-decoration: underline;
+}
+
+/* Right side */
+/* .nav-right{
+    font-weight: 10px;
+} */
+
+/* ✅ Tablet */
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .nav-right{
+        align-self: flex-end;
+    }
+}
+
+/* ✅ Mobile */
+@media (max-width:480px){
+
+    .nav-left{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .nav-right{
+        align-self: flex-start;
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="nav-left">
+        <i class="fa-solid fa-bars"></i>
+        <span>All</span>
+        <span>Today's Deals</span>
+        <span>Customer Service</span>
+        <span>Registry</span>
+        <span>Gift Cards</span>
+        <span>Sell</span>
+    </div>
+
+    <div class="nav-right">
+        Shop deals in Electronics
+    </div>
+</div>
+    
+</body>
+</html>
